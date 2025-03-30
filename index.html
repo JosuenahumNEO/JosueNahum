@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,7 @@
         .hero {
             text-align: center;
             padding: 6rem 0;
-            background: linear-gradient(45deg, var(--accent), #0066FF);
+            background: linear-gradient(45deg, rgb(254, 116, 219), #68a5ff);
             color: white;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             margin-bottom: 3rem;
@@ -69,7 +70,7 @@
             padding: 1.5rem;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
@@ -132,27 +133,32 @@
         }
 
         @media (max-width: 768px) {
-            .skills-grid, .project-grid, .certifications {
+
+            .skills-grid,
+            .project-grid,
+            .certifications {
                 grid-template-columns: 1fr;
             }
-            
+
             .hero {
                 padding: 4rem 0;
             }
         }
+
         .gradiente-texto {
-            background: linear-gradient(to right, #e3f448, #f9e907); /* Azul a blanco */
+            background: linear-gradient(to right, #e3f448, #f9e907);
+            /* Azul a blanco */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
         }
-        
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1>Josue Nahum</h1>
+            <h1 style="font-size: 40pt;">Josué Nahúm</h1><br>
             <p>Desarrollador Full Stack</p>
         </div>
     </header>
@@ -170,89 +176,133 @@
             <div class="card">
                 <h3>🚀 Nivel Intermedio</h3>
                 <ul>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>HTML/CSS</li>
+
+                    <img src="svg/java.svg  " alt="">
+                    <img src="svg/c.svg" alt="">
+                    <img src="svg/php.svg" alt="">
+                    <img src="svg/python.svg" alt="">
+
+                    <img src="svg/css.svg" alt="">
+                    <img src="svg/html5.svg" alt="">
+
+
                 </ul>
             </div>
             <div class="card">
-                <h3>📚 Nivel Principiante</h3>
+                <h3>📚 Nivel Principiante</h3><br>
                 <ul>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>WordPress</li>
-                    <li>.NET</li>
+
+                    <img src="/svg/Csharp.svg" alt="" style="width: 48px; height: 48px;">
+                    <img src="/svg/js.svg" alt="">
+
+                    <img src="/svg/sql.png" alt="">
+                    <img src="/svg/NET.png" alt="" style="border-radius: 50%; width: 48px; height: 48px;">
+                    <img src="/svg/wordpress.svg" alt="">
+
                 </ul>
             </div>
         </div>
+    </section>
+    <section class="container" style=" border-radius:15px; padding:40px;">
+
+        <div class="card">
+            <h2>ENTORNOS CON LOS QUE HE TRABAJADO</h2><br>
+
+            <img src="/svg/vsc.svg" alt="">
+            <img src="/svg/vs.svg" alt="">
+            <img src="/svg/git.svg" alt="">
+            <img src="/svg/github.webp" alt="" style="border-radius: 50%; width: 48px; height: 48px;">
+            <img src="/svg/mysql.png" alt="" style="width: 70px; height: 60px;">
+            <img src="/svg/intellij.svg" alt="">
+            <img src="/svg/pycharm.svg" alt="">
+            <img src="/svg/android_studio.svg" alt="">
+            <img src="/svg/xampp.svg" alt="" style="width: 48px; height: 48px;">
+            <img src="/svg/cmd.png" alt=""
+                style="border-radius: 5px; width: 48px; height: 48px; position: relative; left: 10px;">
+
+
+            <br>
+        </div>
+
     </section>
 
     <section class="container">
         <h1 class="section-title">PROYECTOS</h1>
         <div class="project-grid">
             <div class="card"><br>
+                <img src="/svg/PESCA-DOS.png" alt="" style="width: 250px;"><br><br>
                 <h2>PESCA-DOS</h2><br>
-                
-                <p style="text-align: justify;" >PESCA-DOS es un videojuego hecho %100 en python en un lapso de 3 meses en el que mi rol fue lider y programador.</p><br>
-                <p style="text-align: justify;"  >El juego consta de 3 difcultades y 9 niveles. Es posible cambiar el idioma de español a inglés y tiene diferentes tipos de escenarios que cambian conforme avanza el nivel</p>
+
+                <p style="text-align: justify;">PESCA-DOS es un videojuego hecho %100 en python en un lapso de 3 meses
+                    en el que mi rol fue lider y programador.</p><br>
+                <p style="text-align: justify;">El juego consta de 3 difcultades y 9 niveles. Es posible cambiar el
+                    idioma de español a inglés y tiene diferentes tipos de escenarios que cambian conforme avanza el
+                    nivel</p>
 
                 <img src="img/PESCA-DOS_MENU.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
                 <img src="img/PESCA-DOS_OPCIONES.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/PESCA-DOS_PRINCIPIANTE.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
+                <img src="img/PESCA-DOS_PRINCIPIANTE.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
                 <img src="img/PESCA-DOS_INTERMEDIO.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
                 <img src="img/PESCA-DOS_AVANZADO.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
 
 
 
 
-                
+
                 <div class="contact-links">
                     <a href="https://github.com/JosuenahumNEO/PESCA-DOS" target="_blank">
                         <i class="fab fa-github"></i> Accede al repositorio
                     </a>
                 </div>
             </div>
-            <div class="card"><br>
+            <div class="card">
+                <img src="/svg/VSG.png" alt="" style="height: 40; width: 100px;"><br><br>
                 <h2>VOCES SIN GÉNERO (Actual)</h2><br>
-                <p>Blog web con sistema de administración de contenidos, autenticación de usuarios y sistema de comentarios interactivo.</p>
-                
-                <img src="img/VOCES_SIN_GENERO_VISITANTE.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/VOCES_SIN_GENERO_CATEGORIAS.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/VOCES_SIN_GENERO_OPINIONES.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/VOCES_SIN_GENERO_ADMIN.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/VOCES_SIN_GENERO_TRIVIA.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
-                <img src="img/VOCES_SIN_GENERO_RESULTADOTRIVIA.webp" alt="Menú principal del juego PESCA-DOS" class="project-image">
+                <p>Blog web con sistema de administración de contenidos, autenticación de usuarios y sistema de
+                    comentarios interactivo.</p>
 
-                
+                <img src="img/VOCES_SIN_GENERO_VISITANTE.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+                <img src="img/VOCES_SIN_GENERO_CATEGORIAS.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+                <img src="img/VOCES_SIN_GENERO_OPINIONES.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+                <img src="img/VOCES_SIN_GENERO_ADMIN.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+                <img src="img/VOCES_SIN_GENERO_TRIVIA.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+                <img src="img/VOCES_SIN_GENERO_RESULTADOTRIVIA.webp" alt="Menú principal del juego PESCA-DOS"
+                    class="project-image">
+
+
                 <div class="contact-links">
                     <a href="https://josuenahumneo.github.io/UTEMPhone/" target="_blank">
                         <i class="fab fa-github"></i> Accede al repositorio
                     </a>
+                    <p>La página aún está en desarrollo, puede haber errores.</p>
                 </div>
             </div>
 
             <div class="card"><br>
+                <img src="/svg/UTEM.png" alt="" style="height: 40px;"><br><br>
                 <h2>Catálogo UTEM</h2><br>
-                 
-                <p style="text-align: justify;" >Una página web destinada a la Universidad Tecnológica de Manzanillo </p><br>
-                <p style="text-align: justify;"  >Disponible para todos los buscadores, el catálogo UTEM muestra toda la amplia variedad de equipo disponible para el laboratorio de prácticas de los estudiantes de Ingeniería Industrial dentro de la Universidad</p><br>
+
+                <p style="text-align: justify;">Una página web destinada a la Universidad Tecnológica de Manzanillo </p>
+                <br>
+                <p style="text-align: justify;">Disponible para todos los buscadores, el catálogo UTEM muestra toda la
+                    amplia variedad de equipo disponible para el laboratorio de prácticas de los estudiantes de
+                    Ingeniería Industrial dentro de la Universidad</p><br>
 
 
 
                 <div id="contenedor">
                     <iframe src="utmmz.html" width="100%" height="500px"></iframe>
-                  </div>
+                </div>
 
-                
-
-
-                
                 <div class="contact-links">
-                    <a href="https://github.com/JosuenahumNEO/PESCA-DOS" target="_blank">
-                        <i class="fab fa-github"></i> Accede al repositorio
+                    <a href="https://josuenahumneo.github.io/UTEMPhone/" target="_blank">
+                        <i class="fab fa-github"></i> Ir a la página
                     </a>
                 </div>
             </div>
@@ -260,58 +310,128 @@
     </section>
 
     <section class="container">
-        <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+        <h1 class="section-title">FORMACIÓN ACADÉMICA</h1>
         <div class="certifications">
             <div class="card">
                 <h2 class="gradiente-texto">🎓 Ingeniería de Software</h2>
                 <h4>Universidad de Colima</h4>
                 <p>Facultad de Ingeniería Electromecánica</p>
                 <p>2024 - Actualidad</p><br>
-                
-                <h3 class="gradiente-texto">🎓 Técnico Analsta Programador</h3>
+
+                <h3 class="gradiente-texto">🎓 Técnico Analista Programador</h3>
                 <h4>Universidad de Colima</h4>
                 <p>Bachillerato 14</p>
                 <p>2021 - 2024</p>
             </div>
             <div class="card">
-                <h2 >📚 Cursos Destacados</h2><br>
+                <h2
+                    style="background: linear-gradient(45deg, rgb(247, 157, 225), #d3e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    📚 Cursos Destacados</h2><br>
 
-                <h4>Mecatrónica básica</h4>
-                <p>(UdeC: Bachillerato 14)</p><br>
 
-                <h4>Diseño gráfico</h4>
-                <p>(ISEA: Instituto Superior de Estudios Avanzados)</p><br>
+                <h3
+                    style="background: linear-gradient(45deg, rgb(247, 157, 225), #d3e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Mecatrónica básica</h3>
 
-                <p>Desarrollo Web Profesional</p>
-                <p>Machine Learning Básico</p>
+                <p>(Univerisdad de Colima: Bachillerato 14)</p>
+                <p>2023-2024</p><br>
+
+                <h3
+                    style="background: linear-gradient(45deg, rgb(247, 157, 225), #d3e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Diseño gráfico</h3>
+
+                <p>(ISEA: Instituto Superior de Estudios Avanzados)</p>
+                <p>2019-2020</p><br>
+
             </div>
-            
+
         </div>
     </section>
-
     <section class="container">
         <h2 class="section-title">CERTIFICACIONES</h2>
         <div class="certifications">
-            <div class="card">
-                <h3>Politécnico de Colombia</h3>
-                <p>✔ Programación Java Avanzado</p>
-                <p>✔ Desarrollo Web con PHP</p>
-                <p class="text-accent">2023</p>
+            
+            <!-- Tarjeta PC -->
+            <div class="card" style="
+                background-image: url(/svg/PC.PNG); 
+                background-size: contain; 
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+            ">
+                <!-- Capa oscura -->
+                <div style="
+                    position: absolute; 
+                    top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: rgba(0, 0, 0, 0.5); 
+                    z-index: 1;">
+                </div>
+    
+                <!-- Contenido -->
+                <div style="position: relative; z-index: 2; padding: 20px; color: white;">
+                    <img src="/svg/PCletras.png" style="width: 200px; margin-bottom: 10px; filter: invert(1);"><br>
+
+                    <p>✔ Programación Java Avanzado</p>
+                    <p>✔ Desarrollo Web con PHP</p>
+                    <p class="text-accent">2023</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Skillio</h3>
-                <p>✔ IA aplicada a SEO</p>
-                <p>✔ Python Profesional</p>
-                <p>✔ WordPress Expert</p>
-                <p class="text-accent">2024</p>
+    
+            <!-- Tarjeta Skillio -->
+            <div class="card" style="
+                position: relative; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(/svg/SKILIO.PNG); 
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+                overflow: hidden;
+            ">
+                <!-- Capa oscura -->
+                <div style="
+                    position: absolute; 
+                    top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: rgba(0, 0, 0, 0.5); 
+                    z-index: 1;">
+                </div>
+            
+                <!-- Contenido -->
+                <div style="position: relative; z-index: 2; text-align: center; color: white; padding: 20px;">
+                    <img src="/svg/SKILIOletras.png" alt="" style="width: 100px; margin-bottom: 10px;">
+                    <p>✔ IA aplicada a SEO</p>
+                    <p>✔ Python Profesional</p>
+                    <p>✔ WordPress Expert</p>
+                    <p class="text-accent">2024</p>
+                </div>
             </div>
+    
+        </div>
+    </section>
+    
+            
         </div>
     </section>
 
     <section class="container">
         <h2 class="section-title">SOBRE MÍ</h2>
         <div class="about-content">
-            <p>Desarrollador apasionado con experiencia en creación de soluciones digitales innovadoras. Combino conocimientos técnicos en desarrollo full-stack con especial interés en aplicaciones de Inteligencia Artificial. Mi objetivo es crear software que genere impacto positivo en la sociedad.</p>
+            <p>Desarrollador apasionado con experiencia en creación de soluciones digitales innovadoras. Combino
+                conocimientos técnicos en desarrollo full-stack con especial interés en aplicaciones de Inteligencia
+                Artificial. Mi objetivo es crear software que genere impacto positivo en la sociedad.</p>
+            <br>
+            <h1 style="color: red;">ALARGAR EL TEXTO Y HACERLO MÁS GRANDE</h1>
+
         </div>
     </section>
 
@@ -334,7 +454,8 @@
     </section>
 
     <footer class="container" style="text-align: center; padding: 2rem 0;">
-        <p>© 2024 Josue Nahum. Todos los derechos reservados.</p>
+        <p>© 2025 Josue Nahum. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
